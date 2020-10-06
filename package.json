@@ -1,0 +1,27 @@
+{
+  "name": "time-tracking",
+  "version": "1.0.0",
+  "description": "Time tracking application with local storage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass main.scss -o css",
+    "scss-watch": "node-sass --watch main.scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickgraffis/time-tracking.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickgraffis/time-tracking/issues"
+  },
+  "homepage": "https://github.com/nickgraffis/time-tracking#readme",
+  "dependencies": {
+    "bulma": "^0.9.1",
+    "matematik": "^1.0.9",
+    "node-sass": "^4.14.1"
+  }
+}

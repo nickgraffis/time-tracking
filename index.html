@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="https://raw.githack.com/nickgraffis/versionify/master/versionify.js"></script>
+  <script>
+    scripts('main.js', 'body');
+    styles('css/main.css');
+  </script>
+  <style>
+  #one {
+      fill: transparent;
+      stroke: #f00;
+      stroke-width: 3;
+      stroke-dasharray: 6;
+      animation: rotate 5s linear infinite;
+  }
+
+  @keyframes rotate {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  25% {
+    stroke-dashoffset: 25;
+  }
+  50% {
+    stroke-dashoffset: 50;
+  }
+  75% {
+    stroke-dashoffset: 25;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+  #two {
+      fill: transparent;
+      stroke: grey;
+      stroke-width: 3;
+      stroke-dasharray: 6;
+  }
+  svg {
+    margin-bottom: 10px;
+  }
+  </style>
+  <script src="https://kit.fontawesome.com/7652f157a9.js" crossorigin="anonymous"></script>
+  <title>Time Tracker</title>
+</head>
+<body>
+      <div class="columns">
+        <div class="column is-1 has-background-link-light">
+
+        </div>
+        <div class="column is-3 has-background-light" style="height: 100vh; padding: 35px; border-left: .25px solid black; overflow: scroll;">
+          <aside class="menu">
+            <p class="subtitle is-3">My <strong>Activities</strong></p>
+            <ul id='activities_list' class="menu-list">
+            </ul>
+<div class="buttons is-centered">
+  <button onclick="addActivity()" class="button is-info has-text-weight-semibold" style="width: 80%; margin-top: 50%;">Add Activity</button>
+</div>
+</aside>
+        </div>
+        <div id="list_of_entries" class="column is-6" style="padding: 30px;">
+
+        </div>
+      </div>
+</body>
+</html>
